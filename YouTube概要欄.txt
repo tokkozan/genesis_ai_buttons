@@ -1,0 +1,16 @@
+Physical AI 応用1講座 最終課題
+OmniCampusアカウント名：shirakashi
+Genesis：AI色認識でSO-101が検査ボタンを操作
+
+Genesis 0.3.3を使用した、実機なしのロボットシミュレーションです。
+カメラ画像を学習済みロジスティック回帰で分類し、SO-101が赤→緑→青の検査ボタンを押します。
+先端との物理接触とボタンの沈み込みで成功を確認し、待機位置へ戻ります。
+
+動画：72秒、1倍速（シミュレーション時間）、1280×720、20fps。
+環境：WSL2 Ubuntu 22.04 / Python 3.10 / NVIDIA RTX A2000 12GB。
+AIは色認識を担当し、アーム制御は数値逆運動学とGenesisのPD制御を使用します。
+ボタン位置は既知で、人工RGBデータで学習・評価しています。実環境の認識精度と実機動作は未評価です。
+
+コード：https://github.com/tokkozan/genesis_ai_buttons
+SO-101モデル出典：https://github.com/TheRobotStudio/SO-ARM100 （Apache-2.0）
+Genesis：https://github.com/Genesis-Embodied-AI/Genesis/tree/v0.3.3

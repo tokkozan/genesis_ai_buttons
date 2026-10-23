@@ -1,0 +1,8 @@
+<robot name="inspection_button">
+<link name="base"><inertial><mass value="0.1"/><inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0" ixz="0" iyz="0"/></inertial>
+<visual><origin xyz="0 0 0.012"/><geometry><box size="0.05 0.05 0.024"/></geometry><material name="base"><color rgba="0.20 0.25 0.32 1"/></material></visual>
+<collision><origin xyz="0 0 0.012"/><geometry><box size="0.05 0.05 0.024"/></geometry></collision></link>
+<link name="cap"><inertial><mass value="0.015"/><inertia ixx="0.000003" iyy="0.000003" izz="0.000003" ixy="0" ixz="0" iyz="0"/></inertial>
+<visual><geometry><cylinder radius="0.020" length="0.010"/></geometry><material name="color"><color rgba="0.9 0.1 0.08 1"/></material></visual>
+<collision><geometry><cylinder radius="0.020" length="0.010"/></geometry></collision></link>
+<joint name="button_travel" type="prismatic"><parent link="base"/><child link="cap"/><origin xyz="0 0 0.035"/><axis xyz="0 0 1"/><limit lower="-0.010" upper="0" effort="2" velocity="0.1"/></joint></robot>

@@ -1,0 +1,13 @@
+.venv-wsl/
+__pycache__/
+*.pyc
+.cache/
+outputs/check_*/
+!outputs/check_alternate/
+outputs/check_alternate/*
+!outputs/check_alternate/run_summary.json
+outputs/replay/
+submission.zip
+.env
+.env.*
+outputs/gui_check/

@@ -1,0 +1,29 @@
+{
+  "algorithm": "multiclass logistic regression",
+  "training_samples": 3600,
+  "heldout_samples": 900,
+  "synthetic_heldout_accuracy": 1.0,
+  "classes": [
+    "blue",
+    "green",
+    "red"
+  ],
+  "confusion_matrix": [
+    [
+      300,
+      0,
+      0
+    ],
+    [
+      0,
+      300,
+      0
+    ],
+    [
+      0,
+      0,
+      300
+    ]
+  ],
+  "scope": "Synthetic RGB samples only; not real-world camera accuracy."
+}

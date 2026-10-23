@@ -1,0 +1,12 @@
+genesis-world==0.3.3
+numpy==1.26.4
+matplotlib==3.5.1
+pydantic==2.11.7
+opencv-python==4.11.0.86
+setuptools==80.9.0
+scipy==1.15.3
+Pillow==11.3.0
+scikit-learn==1.7.2
+reportlab==4.4.4
+imageio==2.37.0
+imageio-ffmpeg==0.6.0

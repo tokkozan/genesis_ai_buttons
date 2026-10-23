@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "checks": {
+    "actual_simulator_is_genesis": true,
+    "gpu_backend_used": true,
+    "genesis_camera_used": true,
+    "urdf_fk_agrees_with_genesis": true,
+    "task_succeeded": true,
+    "press_order_matches_color_request": true,
+    "camera_3_colors_correct": true,
+    "all_buttons_physically_depressed": true,
+    "presses_have_probe_contact": true,
+    "no_unexpected_arm_button_contact": true,
+    "joint_limits_respected": true,
+    "arm_actually_moved": true,
+    "original_so101_files_match_pinned_hashes": true,
+    "official_joint_limits_preserved": true,
+    "so101_has_five_arm_axes_and_gripper": true,
+    "video_between_60_180_seconds": true,
+    "video_72_seconds_1x": true,
+    "video_720p_h264_20fps": true,
+    "video_all_frames_decode": true,
+    "scene_changes_with_motion": true,
+    "pdf_present": true,
+    "required_files_present": true,
+    "alternate_color_order_works": true
+  },
+  "video": {
+    "duration_seconds": 72.0,
+    "fps": 20.0,
+    "codec": "h264",
+    "size": [
+      1280,
+      720
+    ],
+    "bytes": 5503728
+  },
+  "simulator": "Genesis",
+  "genesis_version": "0.3.3",
+  "gpu": "NVIDIA RTX A2000 12GB",
+  "pdf_files": [
+    "説明資料_PAI最終課題_shirakashi.pdf"
+  ],
+  "ffmpeg_decode_error": ""
+}
