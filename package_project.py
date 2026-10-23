@@ -11,7 +11,10 @@ def main(account):
     if not report.is_file():
         raise FileNotFoundError("build_report.py --account で先にPDFを作成してください")
     files = list(ROOT.glob("*.py")) + list(ROOT.glob("*.bat")) + list(ROOT.glob("*.sh"))
-    files += [ROOT / n for n in ["requirements.txt", "requirements-lock.txt", "environment_versions.json", "README.md", "THIRD_PARTY.md", "提出手順.md", "YouTubeタイトル.txt", "YouTube概要欄.txt", ".gitignore", ".gitattributes"]]
+    files += [ROOT / n for n in ["requirements.txt", "requirements-lock.txt", "environment_versions.json", "README.md", "THIRD_PARTY.md", "YouTubeタイトル.txt", "YouTube概要欄.txt", ".gitignore", ".gitattributes"]]
+    guide = ROOT / "提出手順.md"
+    if guide.is_file():
+        files.append(guide)
     files += [p for folder in ["assets", "models"] for p in (ROOT / folder).rglob("*") if p.is_file()]
     files += [p for p in (ROOT / "outputs").iterdir() if p.is_file() and p.name in {
         "demo.mp4", "run_summary.json", "verification.json", "start.png", "simulation.png", "success.png",

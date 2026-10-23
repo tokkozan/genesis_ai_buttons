@@ -29,7 +29,6 @@ OmniCampusアカウント名：**shirakashi**。YouTubeタイトル：**PAI最�
 - `outputs/run_summary.json`：Genesisバージョン、GPU、認識・押下・関節角度などの実測記録。
 - `outputs/verification.json`：動作、Genesisの使用、動画、モデル等の検証結果。
 - `THIRD_PARTY.md`：公式SO-101の出典・ライセンス・変更内容。
-- `提出手順.md`：GitHubのPublic設定、YouTubeの限定公開、OmniCampusでの提出方法。
 - `YouTubeタイトル.txt`・`YouTube概要欄.txt`：アップロード時に貼り付ける文章。
 
 ## このPCで再実行する

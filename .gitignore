@@ -8,6 +8,7 @@ outputs/check_alternate/*
 !outputs/check_alternate/run_summary.json
 outputs/replay/
 submission.zip
+提出手順.md
 .env
 .env.*
 outputs/gui_check/

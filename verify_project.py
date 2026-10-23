@@ -40,7 +40,7 @@ def main(account=None):
     reports = [ROOT / f"説明資料_PAI最終課題_{account}.pdf"] if account else list(ROOT.glob("説明資料_PAI最終課題_*.pdf"))
     required = ["run_demo.py", "color_ai.py", "arm_control.py", "prepare_model.py", "fetch_so101.py", "build_report.py",
                 "package_project.py", "record_demo.bat", "run_wsl.sh", "requirements.txt", "requirements-lock.txt", "README.md", "scene_assets.py", "video_ui.py",
-                "提出手順.md", "THIRD_PARTY.md", "models/color_model.json", "assets/so101/LICENSE"]
+                "THIRD_PARTY.md", "models/color_model.json", "assets/so101/LICENSE"]
     scans = summary["camera_classifications"]
     joint_array = np.array([s["joint_positions"] for s in summary["joint_samples"]])
     checks = {
